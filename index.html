@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title> Gestion des Plaintes - Police </title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <div class="container-fluid">
+    <img src="images/logo (1).jpeg" alt="">
+    <a class="navbar-brand" href="#">Commissariat<p>de la police de</p> </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#accueil">Accueil</a></li>
+        <li class="nav-item"><a class="nav-link" href="#enregistrement">Dépôt plainte</a></li>
+        <li class="nav-item"><a class="nav-link" href="#suivi">Comment Déposer</a></li>
+        <li class="nav-item"><a class="nav-link" href="#liste">Types des plaintes</a></li>
+        <li class="nav-item"><a class="nav-link" href="#agents">Procédures</a></li>
+        <li class="nav-item"><a class="nav-link" href="#stats">Vos droits et devoirs</a></li>
+        <li class="nav-item"><a class="nav-link" href="#connexion">Questions fréquentes (FAQ)</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="#apropos">À propos</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Accueil -->
+<section id="accueil" class=" hero text-white d-flex align-items-center justify-content-center">
+  <div class="overlay"></div>
+  <div class="container">
+    <h1>Bienvenue sur le portail de gestion des plaintes du commissariat. 
+    Dans le cadre de la numérisation de nos services, nous avions décider de 
+    mettre en votre disposition cet outil numérique qui va vous permettre de signaler 
+    et de déposer n'importe où et n'importe quand votre dossier. 
+  </h1>
+    
+    <div class="d-flex justify-content-center bouton">
+      <a class="btn btn-primary btn-lg mr-3 " href="#enregistrement" role="button">Déposer une Plainte</a>
+      <a class="btn btn-primary btn-lg mr-3" href="#contact" role="button">Nous contacter</a>
+    </div>
+  </div>  
+</section>
+
+<!-- Enregistrement plainte -->
+<section id="enregistrement" class="container">
+  <h2>Dépôt Plainte</h2>
+  <p>Veuillez remplir le formulaire ci-dessous pour déposer votre plainte.
+    Assurez-vous de fournir des informations aussi précises et détaillées que possible. 
+    Les champs marqués d'un astérisque (*) sont obligatoires.</p>
+  <form>
+    <div class="mb-3">
+      <label class="form-label">Nom Complet du plaignant</label>
+      <input type="text" class="form-control" placeholder="Entrez votre nom">
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Votre Adresse </label>
+      <input type="text" class="form-control" placeholder="Entrez votre adresse">
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Votre Numéro téléphonique </label>
+      <input type="text" class="form-control" placeholder="Entrez votre numéro de téléphone">
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Votre Adresse Email </label>
+      <input type="text" class="form-control" placeholder="Entrez votre email">
+    </div>
+    <div class="mb-3">
+      <label class="form-label">la date et l'heure de l'incident</label>
+      <input type="text" class="form-control" placeholder="Entrez la date et l'heure de l'incident">
+    </div>
+    <div class="mb-3">
+      <label class="form-label">le lieu de l'incident </label>
+      <input type="text" class="form-control" placeholder="Entrez le lieu de l'incident">
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Descrirption détaillée de la plainte</label>
+      <textarea class="form-control" rows="4"></textarea>
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Les pièces jointes</label>
+      <input type="file" class="form-control">
+    </div>
+    <button type="submit" class="btn btn-primary">Soumettre</button>
+  </form>
+</section>
+
+
+<!-- Suivi -->
+<section id="suivi" class="container">
+  <h2>Comment déposer une plainte</h2>
+  <section class="row py-4" >
+    <div class="col-md-7 ">
+      
+      <p>voici les instructions à suivre pour le dépôt de votre plainte :</p>
+      <ol>
+        <li>Remplissez tous les champs obligatoires avec précision.</li>
+        <li>Décrivez l'incident de manière claire et concise.</li>
+        <li>Joignez tout document pertinent (photos, vidéos, témoignages, etc.) si vous en avez.</li>
+        <li>Après avoir soumis le formulaire, vous recevrez un numéro de suivi unique. Conservez-le précieusement pour vérifier l'état de votre plainte.</li>
+      </ol>
+      <img src="" class="img-fluid"  alt="">
+    </div>
+    <div class="col-md-5">
+      <h3>Dépôt palinte en personne</h3>
+      <p>Si vous préférez déposer votre plainte en personne, vous pouvez vous rendre directement au commissariat pendant nos heures d'ouverture.</p>
+      <img src="" alt="">
+    </div>
+  </section>
+</section>
+
+<!-- Liste des plaintes -->
+<section id="liste" class="container">
+  <h2>Types des plaintes</h2>
+  <p>Voici une liste des catégories de plaintes que notre commissariat est habilité à traiter :</p>
+  <section class="row py-4" >
+    <div class="col-md-3 ">
+      <h3>Vol</h3>
+      <p>S'emparer d'un bien appartenant à quelqu'un d'autre sans son autorisation 
+        et avec l'intention de le garder
+      </p>
+      <img src="" class="img-fluid"  alt="">
+    </div>
+    <div class="col-md-3">
+      <h3>Agression</h3>
+      <p>l'agression est toute atteinte physique ou psychologique à une personne, allant des coups
+        et blessures aux actes sexuels non consentis (agression sexuelle, viol).
+      </p>
+      <img src="" alt="">
+    </div>
+    <div class="col-md-3">
+      <h3>Harcèlement</h3>
+      <p>le harcèlement c'est la répétition de paroles ou d'actes qui dégradent les conditions 
+        de vie d'une victime, que ce soit moralement, sexuellement ou en ligne (cyberharcèlement).
+      </p>
+      <img src="" alt="">
+    </div>
+    <div class="col-md-3">
+      <h3>Nuissance sonore</h3>
+      <p> la nuissance sonore c'est des bruits excessifs par leur durée, leur répétition 
+        ou leur intensité, qui troublent la tranquilité du voisinage, de jour comme de nuit.
+      </p>
+      <img src="" alt="">
+    </div>
+    <div class="col-md-3">
+      <h3>Dégradation de biens</h3>
+      <p> Endommager, détruire ou détériorer volontairement la propriété 
+        d'une autre personne (un véhicule, un bâtiment, un objet...).</p>
+      <img src="" alt="">
+    </div>
+    <div class="col-md-3">
+      <h3>Diffamation/injure</h3>
+      <p>Atteindre à l'honneur de quelqu'un. La diffamation accuse d'un fait précis, 
+        tandis que l'injure est une parole offensante sans fait précis .</p>
+      <img src="" alt="">
+    </div>
+    <div class="col-md-3">
+      <h3>Troubles à l'ordre public</h3>
+      <p>Tout comportement qui perturbe la paix, la sécurité et la tranquilité publiques, 
+        comme l'ivresse manifeste sur la voie publique ou les attroupements hostiles
+      </p>
+      <img src="" alt="">
+    </div>
+    <div class="col-md-3">
+      <h3>Autres</h3>
+      <p>Pour plus d'informations sur les plaintes, consultez <a href="https://www.wipo.int/edocs/lexdocs/laws/fr/cd001fr.pdf" target="_blank">
+        la constitution de la RDC</a></p>
+      <img src="" alt="">
+    </div>
+  </section>
+  <div class="autres">
+    <p>Si votre plainte ne correspond à aucune de ces catégories, veuillez nous contacter directement 
+      pour obtenir des informations sur la procédure appropriée.</p>
+  </div>
+</section>
+<!-- Procédures de traitement des plaintes -->
+<section id="agents" class="container">
+  <h2>Procédures de traitement des plaintes</h2>
+  <p>Voici les étapes générales de traitement d'une plainte au sein de notre commissariat :</p>
+  <div class="row">
+    <div class="col-md-4"><div class="card"><div class="card-body"><h5 class="card-title">1. Réception et Enregistrement :</h5><p class="card-text">Votre plainte est reçue et enregistrée dans notre système, 
+      et un numéro de suivi unique vous est attribué.</p></div></div></div>
+    <div class="col-md-4"><div class="card"><div class="card-body"><h5 class="card-title">2. Instruction :</h5><p class="card-text">Un agent est désigné pour examiner votre 
+      plainte et recueillir les informations nécessaires.</p></div></div></div>
+    <div class="col-md-4"><div class="card"><div class="card-body"><h5 class="card-title">3. Enquête (si nécessaire) :</h5><p class="card-text">Selon la nature de la plainte, 
+      une enquête plus approfondie peut être menée.</p></div></div></div>
+    <div class="col-md-4"><div class="card"><div class="card-body"><h5 class="card-title">4. Décision :</h5><p class="card-text">Une décision est prise concernant la suite 
+      à donner à votre plainte (transmission à un autre service, classement, etc.).</p></div></div></div>
+    <div class="col-md-4"><div class="card"><div class="card-body"><h5 class="card-title">5. Communication :</h5><p class="card-text">Vous serez informé de l'état d'avancement et de la décision 
+      concernant votre plainte, dans la mesure du possible et conformément aux procédures.</p></div></div></div>
+    <div class="col-md-4"><div class="card"><div class="card-body"><h5 class="card-title">Et afin, </h5><p class="card-text">Nous nous engageons à traiter chaque plainte de manière équitable et impartiale. 
+      Les délais de traitement peuvent varier en fonction de la complexité de l'affaire.</p></div></div></div>
+    
+  </div>
+</section>
+
+<!-- Vos droits et devoirs en tant que plaignant -->
+<section id="stats" class="container">
+  <h2>Vos droits et devoirs</h2>
+  <div class="row">
+    <div class="col-md-6"><div class="card"><div class="card-body"><h5 class="card-title">Voici vos droits en tant que plaignant :</h5><p class="card-text"><ul>
+      <li>Le droit de déposer une plainte et de recevoir un accusé de réception.</li>
+      <li>Le droit d'être informé de l'état d'avancement de votre plainte, dans la mesure du possible.</li>
+      <li>Le droit de poser des questions sur la procédure.</li>
+      <li>Le droit d'obtenir des informations sur les recours possibles si vous n'êtes pas satisfait du traitement de votre plainte</li>
+    </ul></p></div></div></div>
+    <div class="col-md-6"><div class="card"><div class="card-body"><h5 class="card-title">Voici vos devoirs en tant que plaignant :</h5><p class="card-text"><ul>
+      <li>Le devoir de fournir des informations exactes et complètes.</li>
+      <li>Le devoir de coopérer avec les agents chargés de l'instruction de votre plainte</li>
+      <li>Le devoir de signaler tout changement pertinent concernant votre affaire (nouvelle adresse, nouveaux témoins, etc.).</li>
+    </ul></p></div></div></div>
+    <p>Pour plus d'informations sur vos droits et devoir, nous vous conseillons de cliquer sur :<a href="https://www.wipo.int/edocs/lexdocs/laws/fr/cd001fr.pdf" target="_blank">
+        la constitution de la RDC</a></p>
+  </div>
+</section>
+
+<!-- Questions fréquentes -->
+<section id="connexion" class="container">
+  <h2>Questions fréquentes (FAQ)</h2>
+  <div class="FAQ">
+    <h5>Que faire en cas d'urgence ?</h5>
+    <p>En cas d'urgence, veuillez contacter immédiatement le [Numéro d'Urgence]. 
+      Le dépôt de plainte en ligne n'est pas destiné aux situations d'urgence.</p>
+    <h5>Dois-je fournir des preuves avec ma plainte ?</h5>
+    <p>Oui, si vous disposez de preuves (photos, vidéos, documents, témoignages), 
+      il est important de les joindre à votre plainte. Cela peut faciliter l'instruction de votre dossier.</p>
+    <h5>Que se passe-t-il après le dépôt de ma plainte en ligne ?</h5>
+    <p>Après avoir soumis votre plainte, vous recevrez un numéro de suivi. 
+      Votre plainte sera ensuite examinée par un agent qui pourra vous contacter 
+      pour obtenir des informations supplémentaires si nécessaire. Vous pourrez suivre l'état de votre plainte en utilisant votre numéro de suivi sur notre site web.</p>
+    <h5>Qui va traiter ma plainte ?</h5>
+    <p>Votre plainte sera traitée par un agent du commissariat 
+      compétent pour le type d'infraction ou de problème que vous avez signalé.</p>
+    <h5>Combien de temps faut-il pour traiter une plainte ?</h5>
+    <p>Le délai de traitement peut varier en fonction de la complexité de l'affaire. 
+      Nous nous efforçons de traiter chaque plainte dans les meilleurs délais. 
+      Vous pouvez suivre l'état de votre plainte en ligne pour obtenir des mises à jour.</p>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="container">
+  <h2>Contact</h2>
+  <p>Pour toute question générale qui ne concerne pas le dépôt ou le suivi 
+    d'une plainte spécifique, veuillez utiliser le formulaire ci-dessous.</p>
+  <form>
+    <div class="mb-3">
+      <label class="form-label">Nom </label>
+      <input type="text" class="form-control" placeholder="Entrez votre nom">
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Email</label>
+      <input type="text" class="form-control" placeholder="Entrez votre email">
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Objet</label>
+      <input type="text" class="form-control" placeholder="Entrez l'objet">
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Message</label>
+      <textarea class="form-control" rows="4"></textarea>
+    </div>
+    
+    <button type="submit" class="btn btn-primary">Envoyer le message</button>
+  </form>
+  <div class="adresse">
+    <h5>Notre adresse</h5>
+    <p>Kinshasa/Gombe/l’avenue Colonel Mondjiba</p>
+    <p>Email : commissariatgombe@gmail.com</p>
+    <p>Téléphone Standard : +243 997 367 333</p>
+    <p>Téléphone Urgence: +243 895 56 4529</p>
+    <h5>Horaire d'ouverture</h5>
+    <p>Nous sommes ouvert 24h/24h et 7jours/7jours</p>
+  </div>
+</section>
+<!-- À propos -->
+<section id="apropos" class="container">
+  <h2>À propos de nous</h2>
+  <div class="apropos">
+    <h5>Nom du Commissariat : Commissariat de la Gombe </h5>
+    <h5>Nom du  chef de Commissariat : </h5>
+    <h5>Notre mission </h5>
+      <p>Nous sommes un service de la police 
+        qui a pour mission d'assurer la sécurité de la population et de leurs biens.</p>
+    <h5>Nos valeurs </h5>
+      <p>Nous nous engageons à assurer nos services avec intégrité, professionnalisme,
+      respect, engagement et transparence</p>
+    <p>Nous nous efforçons d'être un partenaire de confiance pour la communauté et nous 
+      prenons vos préoccupations au sérieux. La mise en place de ce portail de gestion 
+      des plaintes témoigne de notre engagement envers la transparence et l'accessibilité.</p>
+  </div>
+</section>
+
+
+<!-- Footer -->
+<footer class="text-center py-4 bg-light">
+  © 2025 Police Nationale Congolaise. Tous droits réservés.
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
